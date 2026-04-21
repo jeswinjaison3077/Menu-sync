@@ -14,9 +14,13 @@ export const HowItWorks = () => (
         </h2>
       </div>
       <div className="mt-14 grid md:grid-cols-3 gap-6">
-        {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl bg-card border border-border p-8 shadow-soft transition-smooth hover:shadow-elegant">
-            <div className="font-display text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">{s.n}</div>
+        {steps.map((s, i) => (
+          <div
+            key={s.n}
+            style={{ animationDelay: `${i * 120}ms` }}
+            className="group rounded-2xl bg-card border border-border p-8 shadow-soft hover-lift animate-slide-up"
+          >
+            <div className="font-display text-5xl font-bold text-gradient transition-transform duration-300 group-hover:scale-110 origin-left">{s.n}</div>
             <h3 className="mt-4 font-display font-semibold text-xl">{s.title}</h3>
             <p className="mt-2 text-muted-foreground leading-relaxed">{s.body}</p>
           </div>
