@@ -18,9 +18,13 @@ export const Problem = () => (
       </p>
     </div>
     <div className="mt-12 grid md:grid-cols-3 gap-6">
-      {pains.map(({ icon: Icon, title, body }) => (
-        <div key={title} className="rounded-2xl border border-border bg-card p-6 shadow-soft transition-smooth hover:shadow-elegant hover:-translate-y-1">
-          <div className="h-11 w-11 rounded-xl bg-primary/10 grid place-items-center mb-4">
+      {pains.map(({ icon: Icon, title, body }, i) => (
+        <div
+          key={title}
+          style={{ animationDelay: `${i * 100}ms` }}
+          className="group rounded-2xl border border-border bg-card p-6 shadow-soft hover-lift animate-slide-up"
+        >
+          <div className="h-11 w-11 rounded-xl bg-primary/10 grid place-items-center mb-4 transition-transform duration-300 group-hover:scale-110">
             <Icon className="h-5 w-5 text-primary" />
           </div>
           <h3 className="font-display font-semibold text-lg">{title}</h3>
