@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
-import heroImg from "@/assets/hero-illustration.jpg";
+import heroImg from "@/assets/hero-illustration.png";
 
 export const Hero = () => (
   <section className="relative overflow-hidden">

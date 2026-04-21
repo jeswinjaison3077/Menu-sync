@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Warm Sand + Ember palette */
-    --background: 36 38% 97%;        /* #faf8f5 */
-    --foreground: 24 18% 14%;
+    /* Light gray-blue + white palette */
+    --background: 210 40% 98%;       /* #F8FAFC */
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 24 18% 14%;
+    --card: 0 0% 100%;               /* #FFFFFF */
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 24 18% 14%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 13 79% 57%;           /* ember #e85d3a */
-    --primary-foreground: 36 38% 97%;
+    --primary: 13 79% 57%;           /* ember accent */
+    --primary-foreground: 0 0% 100%;
     --primary-glow: 22 90% 64%;
 
-    --secondary: 35 36% 92%;         /* warm sand */
-    --secondary-foreground: 24 18% 18%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 14%;
 
-    --muted: 34 25% 93%;
-    --muted-foreground: 24 10% 42%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 35 32% 75%;            /* tan #c9b99a */
-    --accent-foreground: 24 22% 16%;
+    --accent: 210 40% 94%;
+    --accent-foreground: 222 47% 14%;
 
     --destructive: 0 72% 50%;
-    --destructive-foreground: 36 38% 97%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
     --ring: 13 79% 57%;
 
     --radius: 0.85rem;
 
     --gradient-primary: linear-gradient(135deg, hsl(13 79% 57%), hsl(22 90% 64%));
-    --gradient-warm: linear-gradient(180deg, hsl(36 38% 97%), hsl(35 36% 92%));
-    --gradient-mesh: radial-gradient(at 20% 0%, hsl(22 90% 64% / 0.18) 0px, transparent 50%), radial-gradient(at 80% 20%, hsl(35 60% 80% / 0.35) 0px, transparent 50%), radial-gradient(at 60% 100%, hsl(13 79% 57% / 0.12) 0px, transparent 50%);
+    --gradient-warm: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-mesh: radial-gradient(at 20% 0%, hsl(22 90% 64% / 0.12) 0px, transparent 50%), radial-gradient(at 80% 20%, hsl(210 40% 90% / 0.5) 0px, transparent 50%), radial-gradient(at 60% 100%, hsl(13 79% 57% / 0.08) 0px, transparent 50%);
 
     --shadow-soft: 0 1px 2px hsl(24 30% 20% / 0.04), 0 8px 24px -8px hsl(24 30% 20% / 0.08);
     --shadow-elegant: 0 10px 40px -12px hsl(13 79% 57% / 0.35);
