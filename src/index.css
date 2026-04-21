@@ -129,15 +129,4 @@ All colors MUST be HSL.
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .transition-smooth { transition: var(--transition-smooth); }
   .text-balance { text-wrap: balance; }
-  .hover-lift { @apply transition-smooth hover:-translate-y-1 hover:shadow-elegant; }
-  .hover-scale { @apply transition-transform duration-300 hover:scale-[1.03]; }
-  .story-link {
-    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
-  }
-  .text-gradient {
-    background-image: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
 }

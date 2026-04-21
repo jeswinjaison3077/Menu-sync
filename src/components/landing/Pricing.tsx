@@ -17,12 +17,8 @@ export const Pricing = () => (
       </h2>
     </div>
     <div className="mt-14 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      {tiers.map((t, i) => (
-        <div
-          key={t.name}
-          style={{ animationDelay: `${i * 120}ms` }}
-          className={`rounded-2xl border p-8 flex flex-col animate-slide-up transition-smooth hover:-translate-y-1 ${t.highlight ? "border-primary bg-card shadow-elegant scale-[1.02] hover:shadow-glow" : "border-border bg-card shadow-soft hover:shadow-elegant"}`}
-        >
+      {tiers.map((t) => (
+        <div key={t.name} className={`rounded-2xl border p-8 transition-smooth flex flex-col ${t.highlight ? "border-primary bg-card shadow-elegant scale-[1.02]" : "border-border bg-card shadow-soft hover:shadow-elegant"}`}>
           {t.highlight && <span className="self-start mb-4 inline-flex rounded-full bg-gradient-primary px-3 py-1 text-xs font-medium text-primary-foreground">Most popular</span>}
           <h3 className="font-display font-semibold text-xl">{t.name}</h3>
           <p className="text-sm text-muted-foreground mt-1">{t.desc}</p>

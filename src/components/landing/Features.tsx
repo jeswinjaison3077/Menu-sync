@@ -18,13 +18,9 @@ export const Features = () => (
       </h2>
     </div>
     <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {features.map(({ icon: Icon, title, body }, i) => (
-        <div
-          key={title}
-          style={{ animationDelay: `${i * 80}ms` }}
-          className="group rounded-2xl border border-border bg-card p-6 shadow-soft hover-lift hover:border-primary/30 animate-slide-up"
-        >
-          <div className="h-11 w-11 rounded-xl bg-gradient-primary grid place-items-center mb-4 shadow-elegant transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+      {features.map(({ icon: Icon, title, body }) => (
+        <div key={title} className="group rounded-2xl border border-border bg-card p-6 shadow-soft transition-smooth hover:shadow-elegant hover:border-primary/30">
+          <div className="h-11 w-11 rounded-xl bg-gradient-primary grid place-items-center mb-4 shadow-elegant">
             <Icon className="h-5 w-5 text-primary-foreground" />
           </div>
           <h3 className="font-display font-semibold text-lg">{title}</h3>
